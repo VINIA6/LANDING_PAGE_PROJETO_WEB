@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/*INFORMAÇÕES - FUTURE IS HERE (VINICIUS)*/
 :root{
     --mainColor: #64bcf4;
     --hoverColor: #5bacdf;
@@ -154,7 +155,7 @@ header .cont{
 
 
 
-
+/*SLIDES (VINICIUS)*/
 
 
 
@@ -246,7 +247,7 @@ img{
     to{opacity: 1}
 }
 
-/*Resposive*/
+/* SLIDES Resposive*/
 
 @media only screen and (max-width:300px){
     .prev, .next, .text{
@@ -267,7 +268,7 @@ img{
 
 
 
-
+/*Formulario (NATHAN)*/
 
 
 
@@ -318,6 +319,7 @@ section form input[type = passoword]{
     background-color: #4A5F6A;
 }
 
+/*Mais inofrmações (MARCO AURÉLIO)*/
 
 .title{
     display: flex;
@@ -352,4 +354,23 @@ section form input[type = passoword]{
     justify-content: center;
     margin: auto;
     flex-direction: column;
+}
+
+
+/*Roda pé*/
+
+.roda-pe{
+    padding: 10px;
+    background-color: rgb(224, 222, 222);
+}
+.info a{
+    padding-left: 30px;
+    color: var(--darkOne); 
+    max-width: 600px;
+    line-height: 1.3;
+}
+
+.info a:hover{
+    color: var(--hoverColor);
+    transform: scale(1.05);
 }
