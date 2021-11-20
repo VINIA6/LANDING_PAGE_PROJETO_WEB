@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #f1f8fc;
+    --darkOne: #312f3a;
+    --darkTwo: #45424b;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    width: 100%;   
+}
+a{
+    text-decoration: none;
+}
+
+.big-wrapper{
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cont{
+    max-width: 81rem; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+header .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+
+}
+.logo img{
+    width: 40px;
+    margin-right: .6rem;
+    margin-top: -0.6rem;
+}
+
+.logo h3{
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.links a{
+    color: var(--lightTwo);
+    margin-left: 4.5rem;
+    display: inline-block;
+}
+
+.links a:hover{
+    color: var(--hoverColor);
+    transform: scale(1.05);
+}
+
+.btn{
+    display: inline-block;
+    padding: .9rem 1.9rem;
+    color: #fff !important;
+    background-color: var(--mainColor);
+    border-radius: 16px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+}
+
+.showcase-area .cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.big-title{
+    font-size: 1.4rem;
+    color: var(--darkOne);
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.text{
+    color: var(--lightOne);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+
+.showcase-area .btn{
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.25);   
+}
+
+.person{
+    width: 123%;
+    transform: translate(15%, 25px);
+}
+
+.toggle-btn{
+    display: inline-block;
+    border: none;
+    background: var(--darkTwo);
+    color: var(--backgroundColor);
+    outline: none;
+    cursor: pointer;
+}
+
+.toggle-btn i:last-child{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.mySlides{
+    display: none;
+}
+img{
+    vertical-align: middle;
+}
+.slideshow-container{
+    background-color: var(--backgroundColor);
+    padding-top: 20px;
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #312f3a;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text_img{
+    color: var(--lightOne);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 8px;
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 27px 20px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: .3}
+    to {opacity: 1}
+}
+@keyframes fade{
+    from{opacity: .3}
+    to{opacity: 1}
+}
+
+/*Resposive*/
+
+@media only screen and (max-width:300px){
+    .prev, .next, .text{
+        font-size: 11px;
+    }
+    .dot{
+        height: 10px;
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .prev, .next, .text{
+        font-size: 14px;
+    }
+    
+}
+
+
+
+
+
+
+
+body{
+    background-color:#f1f8fc ;
+}
+.Formulario{
+    padding-left: 45px;
+    padding-top: 45px;
+    text-align: center;
+    position: center;
+    width:100%;
+}
+.Formulario form{
+    background-color: rgb(241, 241, 241);
+    max-width: '500px';
+    width:  1024px;
+    height: auto;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.Formulario form h3{
+    text-align: center;
+    color: #f1f8fc;
+}
+.Formulario form input[type = text],
+section form input[type = passoword]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.Formulario form input[type = submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: #5F7C8A;
+    color: white; 
+    border: 0;
+    border-radius: 20px;
+}
+.Formulario form input[type = submit]:hover{
+    background-color: #4A5F6A;
+}
+
+
+.title{
+    display: flex;
+    background-color: #f1f8fc;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: roll;
+    padding: 50px;
+ }
+.container{
+    display: flex;
+    background-color: #f1f8fc;
+    width: 75%;
+    height: 50%;
+    margin: auto;
+    flex-direction: roll;
+    padding-top: 50px;
+}
+
+.card{
+    display: flex;
+    background-color: #f1f8fc;
+    width: 33.3%;
+    height: 100%;
+    padding-left: 70;
+    padding-right: 70;
+    padding-bottom: 30;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
